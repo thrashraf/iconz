@@ -17,7 +17,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 const navigation = [
   { name: "Solid", href: "#", icon: HeartIcon, current: true },
   { name: "Outline", href: "#", icon: StopIcon, current: false },
-  { name: "Flag Icon", href: "#", icon: FlagIcon, current: false },
 ]
 
 function classNames(...classes: string[]) {

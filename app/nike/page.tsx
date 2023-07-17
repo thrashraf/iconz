@@ -507,7 +507,7 @@ export default function Example() {
                       <span className="sr-only">Your Company</span>
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1600px-Logo_NIKE.svg.png?20220908234918"
                         alt=""
                       />
                     </a>
