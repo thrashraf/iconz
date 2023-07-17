@@ -3,13 +3,7 @@
 import React, { Fragment, useState } from "react"
 import { Dialog, Transition } from "@headlessui/react"
 import { HeartIcon, StopCircleIcon } from "@heroicons/react/20/solid"
-import {
-  Bars3Icon,
-  StopIcon,
-  XCircleIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline"
-import { FlagIcon } from "lucide-react"
+import { Bars3Icon, StopIcon, XMarkIcon } from "@heroicons/react/24/outline"
 
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"

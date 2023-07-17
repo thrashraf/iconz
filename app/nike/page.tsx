@@ -841,7 +841,7 @@ export default function Example() {
                 </div>
               </div>
             </div>
-            <div className="h-48 w-full sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:h-full">
+            <div className="h-48 w-full sm:h-64 lg:absolute lg:right-0 lg:top-0 lg:h-full">
               <img
                 src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1564,c_limit/f7ff6654-1d7b-442b-90be-fe6246ffd1d8/nike-just-do-it.jpg"
                 alt=""
