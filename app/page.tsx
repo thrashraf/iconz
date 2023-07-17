@@ -2,24 +2,22 @@
 
 import React, { Fragment, useState } from "react"
 import { Dialog, Transition } from "@headlessui/react"
-import { Bars3Icon, XCircleIcon, XMarkIcon } from "@heroicons/react/24/outline"
-
+import { HeartIcon, StopCircleIcon } from "@heroicons/react/20/solid"
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+  Bars3Icon,
+  StopIcon,
+  XCircleIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline"
+import { FlagIcon } from "lucide-react"
+
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 const navigation = [
-  { name: "Solid", href: "#", icon: XCircleIcon, current: true },
-  { name: "Outline", href: "#", icon: XCircleIcon, current: false },
-  { name: "Brand Logo", href: "#", icon: XCircleIcon, current: false },
-  { name: "Flag Icon", href: "#", icon: XCircleIcon, current: false },
+  { name: "Solid", href: "#", icon: HeartIcon, current: true },
+  { name: "Outline", href: "#", icon: StopIcon, current: false },
+  { name: "Flag Icon", href: "#", icon: FlagIcon, current: false },
 ]
 
 function classNames(...classes: string[]) {
