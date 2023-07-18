@@ -11,11 +11,11 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline"
 
-const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"]
+// const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"]
 const navigation = {
   categories: [
     {
-      name: "Women",
+      name: "New & Featured",
       featured: [
         { name: "Sleep", href: "#" },
         { name: "Swimwear", href: "#" },
@@ -72,27 +72,11 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Kids", href: "#" },
+    { name: "Sales", href: "#" },
   ],
 }
-const offers = [
-  {
-    name: "Download the app",
-    description: "Get an exclusive $5 off code",
-    href: "#",
-  },
-  {
-    name: "Return when you're ready",
-    description: "60 days of free returns",
-    href: "#",
-  },
-  {
-    name: "Sign up for our newsletter",
-    description: "15% off your first order",
-    href: "#",
-  },
-]
+const offers: any[] = []
 const trendingProducts = [
   {
     id: 1,
@@ -298,7 +282,7 @@ export default function Example() {
                             </div>
                             <div>
                               <p
-                                id="mobile-categories-heading"
+                                id="mobile-categories-headin"
                                 className="font-medium text-gray-900"
                               >
                                 Categories
@@ -410,33 +394,33 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  {/* Currency selector */}
-                  <form>
-                    <div className="inline-block">
-                      <label htmlFor="mobile-currency" className="sr-only">
+                {/* <div className="space-y-6 border-t border-gray-200 px-4 py-6"> */}
+                {/* Currency selector */}
+                {/* <form>
+                    <div className="inline-block"> */}
+                {/* <label htmlFor="mobile-currency" className="sr-only">
                         Currency
-                      </label>
-                      <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
-                        <select
+                      </label> */}
+                {/* <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white"> */}
+                {/* <select
                           id="mobile-currency"
                           name="currency"
                           className="flex items-center rounded-md border-transparent bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-gray-700 focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-800"
-                        >
-                          {currencies.map((currency) => (
+                        > */}
+                {/* {currencies.map((currency) => (
                             <option key={currency}>{currency}</option>
-                          ))}
-                        </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
+                          ))} */}
+                {/* </select> */}
+                {/* <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
                           <ChevronDownIcon
                             className="h-5 w-5 text-gray-500"
                             aria-hidden="true"
                           />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                        </div> */}
+                {/* </div> */}
+                {/* </div>
+                  </form> */}
+                {/* </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -446,7 +430,7 @@ export default function Example() {
       <header className="relative z-10">
         <nav aria-label="Top">
           {/* Top navigation */}
-          <div className="bg-gray-900">
+          <div className="bg-gray-100">
             <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
               {/* Currency selector */}
               <form className="hidden lg:block lg:flex-1">
@@ -455,40 +439,51 @@ export default function Example() {
                     Currency
                   </label>
                   <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
-                    <select
+                    {/* <select
                       id="desktop-currency"
                       name="currency"
                       className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
-                    >
-                      {currencies.map((currency) => (
+                    > */}
+                    {/* {currencies.map((currency) => (
                         <option key={currency}>{currency}</option>
-                      ))}
-                    </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
+                      ))} */}
+                    {/* </select> */}
+                    {/* <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
                       <ChevronDownIcon
                         className="h-5 w-5 text-gray-300"
                         aria-hidden="true"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </form>
 
-              <p className="flex-1 text-center text-sm font-medium text-white lg:flex-none">
-                Get free delivery on orders over $100
-              </p>
-
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 <a
                   href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
+                  className="text-sm font-medium text-[#111111] hover:text-gray-100"
                 >
-                  Create an account
+                  Find a Store
                 </a>
-                <span className="h-6 w-px bg-gray-600" aria-hidden="true" />
+                <span className="h-3 w-px bg-[#111111]" aria-hidden="true" />
                 <a
                   href="#"
-                  className="text-sm font-medium text-white hover:text-gray-100"
+                  className="text-sm font-medium text-[#111111] hover:text-gray-100"
+                >
+                  Help
+                </a>
+                <span className="h-3 w-px bg-[#111111]" aria-hidden="true" />
+
+                <a
+                  href="#"
+                  className="text-sm font-medium text-[#111111] hover:text-gray-100"
+                >
+                  Join Us
+                </a>
+                <span className="h-4 w-px bg-[#111111]" aria-hidden="true" />
+                <a
+                  href="#"
+                  className="text-sm font-medium text-[#111111] hover:text-gray-100"
                 >
                   Sign in
                 </a>
@@ -513,10 +508,10 @@ export default function Example() {
                     </a>
                   </div>
 
-                  <div className="hidden h-full lg:flex">
+                  <div className="hidden h-full lg:flex ">
                     {/* Mega menus */}
                     <Popover.Group className="ml-8">
-                      <div className="flex h-full justify-center space-x-8">
+                      <div className="align-center flex h-full space-x-8">
                         {navigation.categories.map((category, categoryIdx) => (
                           <Popover key={category.name} className="flex">
                             {({ open }) => (
@@ -814,38 +809,10 @@ export default function Example() {
           </nav>
 
           <div className="relative">
-            <div
-              aria-hidden="true"
-              className="absolute hidden h-full w-1/2 bg-gray-100 lg:block"
-            />
-            <div className="relative bg-gray-100 lg:bg-transparent">
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8">
-                <div className="mx-auto max-w-2xl py-24 lg:max-w-none lg:py-64">
-                  <div className="lg:pr-16">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
-                      Focus on what matters
-                    </h1>
-                    <p className="mt-4 text-xl text-gray-600">
-                      All the charts, datepickers, and notifications in the
-                      world cant beat checking off some items on a paper card.
-                    </p>
-                    <div className="mt-6">
-                      <a
-                        href="#"
-                        className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 font-medium text-white hover:bg-indigo-700"
-                      >
-                        Shop Productivity
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="h-48 w-full sm:h-64 lg:absolute lg:right-0 lg:top-0 lg:h-full">
+            <div className="w-47 h-48 lg:inset-x-10 lg:top-10 lg:h-full">
               <img
                 src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1564,c_limit/f7ff6654-1d7b-442b-90be-fe6246ffd1d8/nike-just-do-it.jpg"
                 alt=""
-                className="h-full w-full object-cover object-center"
               />
             </div>
           </div>
@@ -882,26 +849,20 @@ export default function Example() {
                       className="inline-flex w-64 flex-col text-center lg:w-auto"
                     >
                       <div className="group relative">
-                        <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200">
-                          <img
-                            src={product.imageSrc}
-                            alt={product.imageAlt}
-                            className="h-full w-full object-cover object-center group-hover:opacity-75"
-                          />
-                        </div>
-                        <div className="mt-6">
-                          <p className="text-sm text-gray-500"></p>
-                          <h3 className="mt-1 font-semibold text-gray-900">
-                            <a href={product.href}>
-                              <span className="absolute inset-0" />
-                              {product.name}
-                            </a>
-                          </h3>
+                        <img
+                          className="h-[400px] w-[400px]"
+                          src="https://via.placeholder.com/348x348"
+                        />
+                        <div className="mt-5">
+                          <a href={product.href}>
+                            <span className="absolute inset-0" />
+                            {product.name}
+                          </a>
+
                           <p className="mt-1 text-gray-900">{product.price}</p>
                         </div>
                       </div>
 
-                      <h4 className="sr-only">Available colors</h4>
                       <ul
                         role="list"
                         className="mt-auto flex items-center justify-center space-x-3 pt-6"
