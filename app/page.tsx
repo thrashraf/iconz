@@ -105,7 +105,7 @@ export default function Example() {
                     </nav>
                   </div>
                   <div className="flex shrink-0 border-t border-gray-200 p-4">
-                    <a href="#" className="group block flex-shrink-0">
+                    <a href="#" className="group block shrink-0">
                       <div className="flex items-center">
                         <div className="ml-3">
                           <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">
@@ -120,7 +120,7 @@ export default function Example() {
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
-              <div className="w-14 flex-shrink-0" aria-hidden="true">
+              <div className="w-14 shrink-0" aria-hidden="true">
                 {/* Force sidebar to shrink to fit close icon */}
               </div>
             </div>
@@ -128,11 +128,11 @@ export default function Example() {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:flex lg:flex-shrink-0">
+        <div className="hidden lg:flex lg:shrink-0">
           <div className="flex w-64 flex-col">
             {/* Sidebar component, swap this element with another sidebar if you like */}
             <div className="flex min-h-0 flex-1 flex-col border-r border-gray-200 bg-gray-100">
-              <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
+              <div className="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
                   <div className="space-y-1 px-2">
                     {navigation.map((item) => (
@@ -161,8 +161,8 @@ export default function Example() {
                   </div>
                 </nav>
               </div>
-              <div className="flex flex-shrink-0 border-t border-gray-200 p-4">
-                <a href="#" className="group block w-full flex-shrink-0">
+              <div className="flex shrink-0 border-t border-gray-200 p-4">
+                <a href="#" className="group block w-full shrink-0">
                   <div className="flex items-center">
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
@@ -196,7 +196,7 @@ export default function Example() {
           <div className="relative z-0 flex flex-1 overflow-hidden">
             <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
               {/* Start main area*/}
-              <div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
+              <div className="absolute inset-0 px-4 py-6 sm:px-6 lg:px-8">
                 <div className="h-full rounded-lg border-2 border-dashed border-gray-200" />
 
                 <label
@@ -206,9 +206,9 @@ export default function Example() {
               </div>
               {/* End main area */}
             </main>
-            <aside className="relative hidden w-96 flex-shrink-0 overflow-y-auto border-l border-gray-200 xl:flex xl:flex-col">
+            <aside className="relative hidden w-96 shrink-0 overflow-y-auto border-l border-gray-200 xl:flex xl:flex-col">
               {/* Start secondary column (hidden on smaller screens) */}
-              <div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
+              <div className="absolute inset-0 px-4 py-6 sm:px-6 lg:px-8">
                 <div className="h-full rounded-lg border-2 border-dashed border-gray-200" />
               </div>
               {/* End secondary column */}
