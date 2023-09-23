@@ -7,6 +7,8 @@ import { Bars3Icon, StopIcon, XMarkIcon } from "@heroicons/react/24/outline"
 
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import Main from "@/components/main"
+import Detail from "@/components/detail"
 
 const navigation = [
   { name: "Solid", href: "#", icon: HeartIcon, current: true },
@@ -38,7 +40,8 @@ export default function Example() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0 bg-gray-600 bg-opacity-75" />
+              <div className="fixed inset-0 bg-gray-600 " />
+
             </Transition.Child>
 
             <div className="fixed inset-0 z-40 flex">
@@ -194,25 +197,8 @@ export default function Example() {
             </div>
           </div>
           <div className="relative z-0 flex flex-1 overflow-hidden">
-            <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
-              {/* Start main area*/}
-              <div className="absolute inset-0 px-4 py-6 sm:px-6 lg:px-8">
-                <div className="h-full rounded-lg border-2 border-dashed border-gray-200" />
-
-                <label
-                  htmlFor="secondary-box"
-                  className="mb-2 block text-sm font-medium text-gray-700"
-                ></label>
-              </div>
-              {/* End main area */}
-            </main>
-            <aside className="relative hidden w-96 shrink-0 overflow-y-auto border-l border-gray-200 xl:flex xl:flex-col">
-              {/* Start secondary column (hidden on smaller screens) */}
-              <div className="absolute inset-0 px-4 py-6 sm:px-6 lg:px-8">
-                <div className="h-full rounded-lg border-2 border-dashed border-gray-200" />
-              </div>
-              {/* End secondary column */}
-            </aside>
+            <Main />
+            <Detail />
           </div>
         </div>
       </div>
